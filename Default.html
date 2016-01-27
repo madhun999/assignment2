@@ -1,0 +1,103 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <meta charset="UTF-8">	
+    <title>HTML5: Week Two</title>  
+    <!-- link to an external style sheet (best practice with style sheet)-->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+	<body class="page"><!-- everything that is visual goes in the body tag  -->
+		<header>
+			<!-- the "banner" area or title of the page-->
+			<h1>Custom Sentence Generator</h1> <!-- only h1 per page (for SEO purposes) --> 	
+		</header>
+		<nav class="nav1"> 
+			<ul>
+				<!-- these links are relative paths -->
+				<li> <a href="#">home</a></li>
+				<li> <a href="http://www.seattle.gov">Seattle.Gov</a></li>
+			</ul>
+		</nav>
+		<div id="mainContent">
+          <h3>Select items from the following dropdowns to complete this sentence:<br /><br />
+            <span id="Sentence">Now is the (param1) for all (param2) (param3) to come to the (param4) of their (param5).</span><br /><br />
+          </h3>
+			<!-- A Simple Form    -->
+            <form id="signup-form" method="post" action="#" >
+              <fieldset>
+                <ul>
+                  <li>
+                    <label>Param 1</label>
+                    <select id="Param1" name="Param1">
+                      <option value="time" selected>time</option>
+                      <option value="year">year</option>
+                      <option value="day">day</option>
+                      <option value="sidereal period">sidereal period</option>
+                      <option value="lunar month">lunar month</option>
+                    </select>
+                  </li>
+                  <li>
+                    <label>Param 2</label>
+                    <select id="Param2" name="Param2">
+                      <option value="good" selected>good</option>
+                      <option value="bad">bad</option>
+                      <option value="indifferent">indifferent</option>
+                      <option value="timely">timely</option>
+                      <option value="best">best</option>
+                      <option value="worst">worst</option>
+                    </select>
+                  </li>
+                  <li>
+                    <label>Param 3</label>
+                    <select id="Param3" name="Param3">
+                      <option value="men" selected>men</option>
+                      <option value="people">people</option>
+                      <option value="cats">cats</option>
+                      <option value="beings">beings</option>
+                      <option value="small green creatures from Alpha Centauri">small green creatures from Alpha Centauri</option>
+                    </select>
+                  </li>
+                  <li>
+                    <label>Param 4</label>
+                    <select id="Param4" name="Param4">
+                      <option value="aid" selected>aid</option>
+                      <option value="assistance">assistance</option>
+                      <option value="support">support</option>
+                      <option value="harm">harm</option>
+                      <option value="tea shop">tea shop</option>
+                    </select>
+                  </li>
+                  <li>
+                    <label>Param 5</label>
+                    <select id="Param5" name="Param5">
+                      <option value="country" selected>country</option>
+                      <option value="nation">nation</option>
+                      <option value="world">world</option>
+                      <option value="football team">football team</option>
+                      <option value="self-delusion">self-delusion</option>
+                    </select>
+                  </li>
+                </ul>
+                <input type="submit" onclick="HandleSubmit(); return false;" >
+              </fieldset>
+            </form>
+
+
+        </div><!-- closing maincContent div tag -->
+		
+		
+        <!--  This is the footer section, only footer stuff -->
+		<footer>
+			<p>&copy; copyright 2016</p>
+			
+		</footer>
+
+      <script src="javascript/app.js"></script>
+
+	</body>
+</html>
